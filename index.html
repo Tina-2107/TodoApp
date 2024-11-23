@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
+<head>
+    <title>Todo App</title>
+</head>
+<body>
+    <h1>To Do List</h1>
+    <div class="TodoContainer">
+    <input type="text" id="task" class="todo-input" placeholder="Enter a task">
+    <input type="date" id="todo-date" class="todo-input" >
+    <textarea id="task-notes" placeholder="Enter notes"></textarea>
+    <label class="priority-label">
+        <input type="checkbox" id="task-priority" />
+        Mark as priority ⭐
+    </label>
+    <button class="btn todo-input" onclick="
+    addTodo()">Add</button>
+</div>
+<div>
+        <ul id="Todolist"></ul>
+</div>
+
+
+
+    <script src="todo.js"></script>
+</body>
+</html>
